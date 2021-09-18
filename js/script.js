@@ -1,10 +1,17 @@
-const log = function(a,b, ...rest) {
-    console.log(a,b,rest);
-}
-log('basic','rest','operator','usage');
+window.addEventListener("DOMContentLoaded", () => {
+    const tabs = require("./modules/tabs"),
+        modal = require("./modules/modal"),
+        calculator = require("./modules/calculator"),
+        timer = require("./modules/timer"),
+        slider = require("./modules/slider"),
+        cards = require("./modules/cards"),
+        form = require("./modules/form");
 
-function calcOrDouble(number,basics = 2){
-    console.log(number*basics);
-}
-
-calcOrDouble(3);
+    modal();
+    calculator();
+    timer();
+    slider();
+    cards();
+    form();
+    tabs();
+});
